@@ -200,9 +200,11 @@ const Page = () => {
         {/* First Row (Large Image Spanning Two Columns on Large Screens) */}
         <div className="lg:col-span-2 pl-0 md:ml-5 lg:ml-10 ">
         <Link href="https://countdowntimer-mu.vercel.app/">
-        <img
+        <Image
             src="/countdown.jpeg"
             alt="service"
+            width={400}
+            height={400}
             className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover hover:scale-105 transition-all duration-300"
           />
         </Link>
@@ -213,18 +215,22 @@ const Page = () => {
         <div className="grid grid-rows-2 gap-5 lg:col-span-1">
           <div className="flex justify-center">
            <Link href="https://wheather-widge.vercel.app/">
-           <img
+           <Image
               src="/wheather widge.png"
               alt="service"
+              width={200}
+              height={200}
               className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover hover:scale-105 transition-all duration-300"
             />
            </Link>
           </div>
           <div className="flex justify-center">
           <Link href="https://birthday-wishes-beta-hazel.vercel.app/">
-          <img
+          <Image
               src="/happy birthday.jpg"
               alt="service"
+              width={200}
+              height={200}
               className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover hover:scale-105 transition-all duration-300"
             />
           </Link>
@@ -236,27 +242,33 @@ const Page = () => {
       <div className="w-[94%] mx-auto grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-9 mb-[200px]">
         <div className="flex justify-center">
         <Link href="https://wheather-widge.vercel.app/">
-           <img
+           <Image
               src="/wheather widge.png"
               alt="service"
+              width={200}
+              height={200}
               className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover hover:scale-105 transition-all duration-300"
             />
            </Link>
         </div>
         <div className="flex justify-center">
        <Link href="https://simple-calculator-delta-three.vercel.app/">
-       <img
+       <Image
             src="/R.png"
             alt="service"
+            width={200}
+            height={200}
              className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover hover:scale-105 transition-all duration-300"
           />
        </Link>
         </div>
         <div className="flex justify-center">
       <Link href="https://number-gussing-game-ten.vercel.app/">
-      <img
+      <Image
             src="/hqdefault.jpg"
             alt="service"
+            width={200}
+            height={200}
           className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover hover:scale-105 transition-all duration-300"
           />
       </Link>
@@ -310,7 +322,9 @@ const Page = () => {
         className="border bg-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 duration-300"
       >
         <div className="flex items-center gap-3 mb-4">
-          <img
+          <Image
+          width={64}
+          height={64}
             src="/blog1.png.webp"
             alt="feedback"
             className="w-16 h-16 rounded-full shadow-md"
@@ -367,10 +381,12 @@ const Page = () => {
   <div className="container mx-auto">
     {/* Logo and contact info */}
     <div className="text-center my-16 md:my-28">
-      <img
+      <Image
         src="/logo2_footer.png.webp"
         alt="logo"
-        className="w-20 md:w-30 mx-auto mb-6"
+        width={300}
+        height={100}
+        className="w-30 md:w-50 mx-auto mb-6"
       />
       <h2 className="text-3xl md:text-6xl mt-6">sidra@porfolio.com</h2>
       <p className="text-sm md:text-lg mt-4 md:mt-10 text-gray-400 leading-loose">

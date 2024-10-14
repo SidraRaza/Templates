@@ -1,11 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header className="bg-white shadow-lg fixed w-full top-0 left-0 z-50">
       <nav className="flex justify-between items-center p-5 relative">
         <div className="text-white text-3xl font-bold flex items-center">
-          <img src="/logo.png.webp" alt="logo" />
+          <Image src="/logo.png.webp" alt="logo"
+           width={200}
+           height={100} />
         </div>
         <input type="checkbox" id="menu-toggle" className="hidden peer" />
         <label
@@ -27,7 +30,7 @@ export default function Header() {
           </li>
           <li className="md:ml-6 mt-2 md:mt-0">
             <Link href="/services" className="text-black block py-3 px-2 hover:text-red-500 rounded transition-all">
-              Services
+              My Projects
             </Link>
           </li>
           <li className="md:ml-6 mt-2 md:mt-0">

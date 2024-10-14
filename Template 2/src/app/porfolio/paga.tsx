@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import {  FaFacebook, FaGithub, FaHeart, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaArrowTurnUp } from "react-icons/fa6";
+import Image from 'next/image'
 const Porfolio= () => {
   return (
     <section className="h-[400px] bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat relative mt-16">
@@ -72,9 +73,11 @@ const Porfolio= () => {
         {/* First Row (Large Image Spanning Two Columns on Large Screens) */}
         <div className="lg:col-span-2 pl-0 md:ml-5 lg:ml-10 ">
         <Link href="https://countdowntimer-mu.vercel.app/">
-        <img
+        <Image
             src="/countdown.jpeg"
             alt="service"
+            width={400}
+            height={200}
             className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
           />
         </Link>
@@ -85,18 +88,22 @@ const Porfolio= () => {
         <div className="grid grid-rows-2 gap-5 lg:col-span-1">
           <div className="flex justify-center">
            <Link href="https://wheather-widge.vercel.app/">
-           <img
+           <Image
               src="/wheather widge.png"
               alt="service"
+              height={200}
+              width={200}
               className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover"
             />
            </Link>
           </div>
           <div className="flex justify-center">
           <Link href="https://birthday-wishes-beta-hazel.vercel.app/">
-          <img
+          <Image
               src="/happy birthday.jpg"
               alt="service"
+              height={200}
+              width={200}
               className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover"
             />
           </Link>
@@ -108,27 +115,33 @@ const Porfolio= () => {
       <div className="w-[94%] mx-auto grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-9 mb-[200px]">
         <div className="flex justify-center">
         <Link href="https://wheather-widge.vercel.app/">
-           <img
+           <Image
               src="/wheather widge.png"
               alt="service"
+              height={200}
+              width={200}
               className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover"
             />
            </Link>
         </div>
         <div className="flex justify-center">
        <Link href="https://simple-calculator-delta-three.vercel.app/">
-       <img
+       <Image
             src="/R.png"
             alt="service"
+            height={200}
+            width={200}
              className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover"
           />
        </Link>
         </div>
         <div className="flex justify-center">
       <Link href="https://number-gussing-game-ten.vercel.app/">
-      <img
+      <Image
             src="/hqdefault.jpg"
             alt="service"
+            height={200}
+            width={200}
           className="w-full md:w-[350px] h-[250px] md:h-[290px] object-cover"
           />
       </Link>
@@ -139,10 +152,12 @@ const Porfolio= () => {
   <div className="container mx-auto">
     {/* Logo and contact info */}
     <div className="text-center my-16 md:my-28">
-      <img
+      <Image
         src="/logo2_footer.png.webp"
         alt="logo"
-        className="w-20 md:w-30 mx-auto mb-6"
+        width={300}
+        height={100}
+        className="w-30 md:w-50 mx-auto mb-6"
       />
       <h2 className="text-3xl md:text-6xl mt-6">sidra@porfolio.com</h2>
       <p className="text-sm md:text-lg mt-4 md:mt-10 text-gray-400 leading-loose">

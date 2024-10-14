@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import {  FaFacebook, FaGithub, FaHeart, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaArrowTurnUp } from "react-icons/fa6";
+import Image from 'next/image'
 const page = () => {
   return (
     <section className="h-[400px] bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat relative mt-16">
@@ -50,10 +51,12 @@ const page = () => {
   <div className="container mx-auto">
     {/* Logo and contact info */}
     <div className="text-center my-16 md:my-28">
-      <img
+      <Image
         src="/logo2_footer.png.webp"
         alt="logo"
-        className="w-20 md:w-30 mx-auto mb-6"
+        width={300}
+        height={100}
+        className="w-30 md:w-50 mx-auto mb-6"
       />
       <h2 className="text-3xl md:text-6xl mt-6">sidra@porfolio.com</h2>
       <p className="text-sm md:text-lg mt-4 md:mt-10 text-gray-400 leading-loose">

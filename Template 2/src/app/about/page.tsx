@@ -108,9 +108,11 @@ const AboutPage = () => {
         className="border bg-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 duration-300"
       >
         <div className="flex items-center gap-3 mb-4">
-          <img
+          <Image
             src="/blog1.png.webp"
             alt="feedback"
+            width={64}
+            height={64}
             className="w-16 h-16 rounded-full shadow-md"
           />
           <div className="flex flex-col">
@@ -164,10 +166,12 @@ const AboutPage = () => {
   <div className="container mx-auto">
     {/* Logo and contact info */}
     <div className="text-center my-16 md:my-28">
-      <img
+      <Image
         src="/logo2_footer.png.webp"
         alt="logo"
-        className="w-20 md:w-30 mx-auto mb-6"
+        width={200}
+        height={200}
+        className="w-30 md:w-50 mx-auto mb-6"
       />
       <h2 className="text-3xl md:text-6xl mt-6">sidra@porfolio.com</h2>
       <p className="text-sm md:text-lg mt-4 md:mt-10 text-gray-400 leading-loose">

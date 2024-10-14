@@ -6,16 +6,17 @@ import { GrAnnounce } from "react-icons/gr";
 import { SiAffinitydesigner } from "react-icons/si";
 import {  FaFacebook, FaGithub, FaHeart, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaArrowTurnUp } from "react-icons/fa6";
+import Image from 'next/image'
 const ContactPage = () => {
   return (
     <section className="h-[400px] bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat relative mt-16">
     <div className="flex justify-between items-start h-full px-4 md:px-16">
       <div className="text-center lg:text-left mt-36 lg:mt-28 ml-3">
         <h1 className="text-3xl md:text-5xl font-bold  font-[rufina] ">
-       My Services
+       My Projects
         </h1>
         <Link href="/" className=" text-xl font-bold text-red-500 leading-loose ">Home / </Link>
-        <Link href="#" className=" text-xl font-bold text-red-500 leading-loose "> My Services</Link>
+        <Link href="#" className=" text-xl font-bold text-red-500 leading-loose "> My Projects</Link>
        
         
       </div>
@@ -184,10 +185,12 @@ const ContactPage = () => {
   <div className="container mx-auto">
     {/* Logo and contact info */}
     <div className="text-center my-16 md:my-28">
-      <img
+      <Image
         src="/logo2_footer.png.webp"
         alt="logo"
-        className="w-20 md:w-30 mx-auto mb-6"
+        width={300}
+        height={100}
+        className="w-30 md:w-50 mx-auto mb-6"
       />
       <h2 className="text-3xl md:text-6xl mt-6">sidra@porfolio.com</h2>
       <p className="text-sm md:text-lg mt-4 md:mt-10 text-gray-400 leading-loose">
