@@ -16,7 +16,7 @@ const Services = () => {
           return (
             <div key={service.id} data-aos="fade-left"
             data-aos-anchor-placement="top-center"
-            data-aos-delay={`${i * 150}`}>
+            data-aos-delay={`${i * 50}`}>
               <ServicesCard services={service}/>
             </div>
           );

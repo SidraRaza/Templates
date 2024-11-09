@@ -13,7 +13,7 @@ const Blog = () => {
                 return <div
                 data-aos="zoom-in"
               data-aos-anchor-placement="top-center"
-              data-aos-delay={`${i * 150}`}
+              data-aos-delay={`${i * 50}`}
                 key={blog.id}>
                     <BlogCard blog={blog}/>
                 </div>

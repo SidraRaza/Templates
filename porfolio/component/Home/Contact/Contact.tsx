@@ -12,7 +12,7 @@ const Contact = () => {
         <div
           data-aos="fade-right"
           data-aos-anchor-placement="top-center"
-          data-aos-delay="100"
+          data-aos-delay="50"
           className="xl:mx-auto lg:mx-auto"
         >
           <ContactInf />

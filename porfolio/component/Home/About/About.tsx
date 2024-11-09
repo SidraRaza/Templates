@@ -51,7 +51,7 @@ const AboutPage = () => {
         </div>
         <div  data-aos="zoom-in"
         data-aos-anchor-placement="top-center"
-        data-aos-delay="100"
+        data-aos-delay="50"
         className="grid grid-cols-2 items-center gap-12 lg:mx-auto">
           <div>
             <Image

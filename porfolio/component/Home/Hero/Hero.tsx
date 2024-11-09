@@ -22,7 +22,7 @@ const Hero = () => {
             {/* title */}
             <h1
               data-aos="fade-right"
-              data-aos-delay="200"
+              data-aos-delay="100"
               className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold md:leading-[3rem]
       lg:leading-[3.5rem]  xl:leading-[4rem] text-white"
             >
@@ -30,14 +30,14 @@ const Hero = () => {
             </h1>
             <p
               data-aos="fade-left"
-              data-aos-delay="300"
+              data-aos-delay="100"
               className="mt-6 text-sm md:text-base text-white text-opacity-60 "
             >
               {BaseInfo.description}
             </p>
             <button
               data-aos="zoom-in"
-              data-aos-delay="400"
+              data-aos-delay="200"
               className="md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 
       rounded-lg mt-8 bg-rose-500 hover:bg-rose-700 flex items-center space-x-2"
             >
@@ -48,7 +48,7 @@ const Hero = () => {
           {/* image content */}
           <div
             data-aos="zoom-in"
-            data-aos-delay="500"
+            data-aos-delay="300"
             className="mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950
       overflow-x-hidden"
           >
