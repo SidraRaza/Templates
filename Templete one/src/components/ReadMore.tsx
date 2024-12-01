@@ -1,9 +1,15 @@
-import Link from 'next/link'
-import React from 'react'
-import { FaShareAlt } from 'react-icons/fa'
-import {  FaStar,FaRegStarHalfStroke } from 'react-icons/fa6'
+import Link from "next/link";
+import React from "react";
+import { FaShareAlt } from "react-icons/fa";
+import { FaStar, FaRegStarHalfStroke } from "react-icons/fa6";
+import { useState } from "react";
+import { it } from "node:test";
 
 const ReadMore = () => {
+  const [cardData, setCardData] = useState();
+  const addToCard = (item: any) => {
+    setCardData(item);
+  };
   return (
     <>
       {/* Header Section */}
@@ -12,8 +18,12 @@ const ReadMore = () => {
           <h1 className="text-3xl font-bold mb-4">Product Details</h1>
         </div>
         <div className="flex justify-center space-x-4 text-blue-600">
-          <Link href='/' className="hover:underline">Home</Link>
-          <Link href='#' className="hover:underline">Product Details</Link>
+          <Link href="/" className="hover:underline">
+            Home
+          </Link>
+          <Link href="#" className="hover:underline">
+            Product Details
+          </Link>
         </div>
       </div>
 
@@ -21,7 +31,11 @@ const ReadMore = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-start gap-8 p-6 bg-red-600 h-[400px]  mt-16">
         {/* Product Image */}
         <div className="w-full md:w-[250px]">
-          <img src="/latest1.jpg.webp" alt="Product" className="w-full rounded-lg shadow-lg h-[350px] ml-10"/>
+          <img
+            src="/latest1.jpg.webp"
+            alt="Product"
+            className="w-full rounded-lg shadow-lg h-[350px] ml-10"
+          />
         </div>
 
         {/* Product Info */}
@@ -40,20 +54,21 @@ const ReadMore = () => {
             <p className="text-white">(120 Review)</p>
           </div>
 
-         
-
-        <div className='flex flex-col-1 '>
-          <button className="px-6 py-3 bg-white hover:text-white text-black font-semibold transition  hover:bg-blue-700 rounded-3xl">
-            Add To Cart
-          </button>
-
-        
-            <FaShareAlt size={50}  className="text-white bg-red-600 border border-white rounded-full p-4 ml-4 cursor-pointer"/>
-            </div>
+          <div className="flex flex-col-1 ">
+            <button className="px-6 py-3 bg-white hover:text-white text-black font-semibold transition
+              hover:bg-blue-700 rounded-3xl"
+              onClick={() => addToCard(item)}>
+              Add To Cart
+            </button>
+            <FaShareAlt
+              size={50}
+              className="text-white bg-red-600 border border-white rounded-full p-4 ml-4 cursor-pointer"
+            />
+          </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ReadMore
+export default ReadMore;

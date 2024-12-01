@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import TopHeader from "@/components/TopHeader";
-import MainHeader from "@/components/MainHeader";
-import MinHeader from "@/components/MinHeader";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,13 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <TopHeader/>
-          <MainHeader />
-          <MinHeader/>
         {children}
-        <Footer/>
       </body>
     </html>
   );

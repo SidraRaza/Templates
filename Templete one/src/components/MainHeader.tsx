@@ -5,12 +5,12 @@ import { LuShoppingCart, LuUser2 } from "react-icons/lu";
 
 const MainHeader = () => {
   return (
-    <div className="flex bg-white w-[95%] flex-col md:flex-row justify-between items-center border-b border-gray-300 p-4 gap-5 text-sm mx-auto">
+    <div className="flex bg-white w-[95%] flex-col md:flex-row lg:flex-co-1 justify-between items-center border-b border-gray-300 p-4 gap-5 text-sm mx-auto">
       
       {/* Left Section: Logo and Title */}
       <div>
-        <ul className="flex space-x-1 items-center sm:space-y-0 sm:flex-col">
-          <li>
+        <ul className="flex space-x-1  sm:space-y-0 sm:flex-col">
+          {/* <li>
             <img
               src="/300s.jpg"
               alt="logo"
@@ -18,10 +18,10 @@ const MainHeader = () => {
               height={50}
               className="rounded-3xl"
             />
-          </li>
+          </li> */}
           <li>
             <Link href="#">
-              <h1 className="text-3xl font-Metro flex flex-col sm:flex-row sm:items-right">
+              <h1 className="text-3xl pl-7font-Metro flex flex-col sm:flex-row sm:items-right">
                 <b>Small</b>
                 <b className="text-gray-400 font-thin pl-1">Shop</b>
               </h1>
