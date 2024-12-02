@@ -20,9 +20,9 @@ import {
 
 const Header = () => {
   return (
-    <>
-      <div className="flex items-center justify-between mx-auto border-b border-gray-300 py-4 px-20">
-        <div className="flex items-center ">
+    <div className="hidden md:block">
+      <div className="flex items-center justify-between mx-auto border-b border-gray-300 py-6 px-20 ">
+        <div className="flex items-center w-64">
           <Input placeholder="Search..." />
           {/* <FaSearch size={20} className='mt-[-10px]'/> */}
         </div>
@@ -54,14 +54,24 @@ const Header = () => {
           <Link href="/travel" className="hover:text-orange-500">Food</Link>
           <Link href="/travel" className="hover:text-orange-500">Technology</Link>
           <Link href="/travel" className="hover:text-orange-500">Business</Link>
-          
-          <AccordionTrigger className="text-black hover:text-orange-500 ">DropDown</AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-2 ml-5  ">
+          <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger className="text-black hover:text-orange-500">DropDpwn</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-2 ml-10  ">
           <Link href="/travel" className="hover:text-orange-500">Sub Menu One</Link>
           <Link href="/travel" className="hover:text-orange-500">Sub Menu Two</Link>
           <Link href="/travel" className="hover:text-orange-500">Sub Menu Three</Link>
         
+          
+       
+      
         </AccordionContent>
+      </AccordionItem>
+     
+    </Accordion>
+   
+       
+      
         </AccordionContent>
       </AccordionItem>
      
@@ -80,7 +90,7 @@ const Header = () => {
 
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
