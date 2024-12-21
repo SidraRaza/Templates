@@ -9,7 +9,9 @@ const poppins = Poppins({
 
 const Customer = () => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-[90%] mx-auto pt-20">
+    <>
+    <div> <h1 className="text-4xl text-center font-bold mt-16">Blog</h1></div>
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-[90%] mx-auto pt-10">
 <div className="grid justify-center items-center">
 <Image
             src={"/1.webp"}
@@ -180,6 +182,7 @@ const Customer = () => {
 </div>
 
     </div>
+    </>
   )
 }
 

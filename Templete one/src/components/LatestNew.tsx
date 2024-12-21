@@ -21,8 +21,8 @@ const LatestNew = () => {
             ipsum dolor sit amet consectetur adipisicing{" "}
           </h1>
           <p className="text-gray-500 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            est officia ducimus, vitae ...
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          est officia ducimus, vitae ...
           </p>
           <Link href="/ReadMore" className="underline font-bold py-4 hover:text-red-700">Read More</Link>
         </div>

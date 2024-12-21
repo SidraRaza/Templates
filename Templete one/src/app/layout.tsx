@@ -5,6 +5,7 @@ import TopHeader from "@/components/TopHeader";
 import MainHeader from "@/components/MainHeader";
 import MinHeader from "@/components/MinHeader";
 import React from 'react';
+import { CartProvider } from "./products/context/CartContext";
 
 
 
@@ -36,11 +37,13 @@ export default function RootLayout({
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <CartProvider>
           <TopHeader/>
           <MainHeader />
           <MinHeader/>
-        {children}
+          {children}
         <Footer/>
+        </CartProvider>
       </body>
     </html>
   );

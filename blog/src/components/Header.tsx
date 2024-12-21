@@ -43,24 +43,24 @@ const Header = () => {
       <SheetTitle className="mt-6 ml-6">MagDesign</SheetTitle>
       <SheetDescription className="pt-10 ml-6">
         <div className="text-black hover:text-orange-500">
-        <Link href="/travel">Home</Link>
+        <Link href="/">Home</Link>
          
         </div>
       <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger className="text-black hover:text-orange-500">Categories</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-2 ml-10  ">
-          <Link href="/travel" className="hover:text-orange-500">Travel</Link>
-          <Link href="/travel" className="hover:text-orange-500">Food</Link>
-          <Link href="/travel" className="hover:text-orange-500">Technology</Link>
-          <Link href="/travel" className="hover:text-orange-500">Business</Link>
+          <Link href="#" className="hover:text-orange-500">Travel</Link>
+          <Link href="#" className="hover:text-orange-500">Food</Link>
+          <Link href="#" className="hover:text-orange-500">Technology</Link>
+          <Link href="#" className="hover:text-orange-500">Business</Link>
           <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger className="text-black hover:text-orange-500">DropDpwn</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-2 ml-10  ">
-          <Link href="/travel" className="hover:text-orange-500">Sub Menu One</Link>
-          <Link href="/travel" className="hover:text-orange-500">Sub Menu Two</Link>
-          <Link href="/travel" className="hover:text-orange-500">Sub Menu Three</Link>
+          <Link href="#" className="hover:text-orange-500">Sub Menu One</Link>
+          <Link href="#" className="hover:text-orange-500">Sub Menu Two</Link>
+          <Link href="#" className="hover:text-orange-500">Sub Menu Three</Link>
         
           
        
@@ -78,10 +78,10 @@ const Header = () => {
     </Accordion>
    
        <div className="flex flex-col gap-2 text-black ">
-       <Link href="/travel" className="hover:text-orange-500">Travel</Link>
-          <Link href="/travel" className="hover:text-orange-500">Food</Link>
-          <Link href="/travel" className="hover:text-orange-500">Technology</Link>
-          <Link href="/travel" className="hover:text-orange-500">Business</Link>
+       <Link href="#" className="hover:text-orange-500">Travel</Link>
+          <Link href="#" className="hover:text-orange-500">Food</Link>
+          <Link href="#" className="hover:text-orange-500">Technology</Link>
+          <Link href="#" className="hover:text-orange-500">Business</Link>
        </div>
       </SheetDescription>
     </SheetHeader>

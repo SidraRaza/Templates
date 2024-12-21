@@ -12,6 +12,8 @@ import Image from "next/image"
 
 export default function CarouselSize() {
   return (
+    <>
+    <div><h1 className="text-4xl text-center font-bold mt-16">Latest Blog</h1></div>
     <Carousel
       opts={{
         align: "start",
@@ -19,14 +21,20 @@ export default function CarouselSize() {
       className="w-[90%] mx-auto mt-10"
     >
       <CarouselContent>
+    
         {Array.from({ length: 5 }).map((_, index) => (
+        
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            
             <div className="p-1">
               <Card>
+               
                 <CardContent className="flex aspect-square items-center justify-center ">
+                
                 <div className="grid justify-center items-center">
+
 <Image
-            src={"/2.webp"}
+            src={"/OIP (2).jpeg"}
             alt="logo"
             width={350}
             height={200}
@@ -52,14 +60,18 @@ export default function CarouselSize() {
             </div>
             </div>  
 </div>
+
                 </CardContent>
+                
               </Card>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
+      
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
+    </>
   )
 }

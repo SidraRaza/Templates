@@ -7,7 +7,6 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import {
@@ -42,7 +41,7 @@ const ResponsiveNav = () => {
                
                 <SheetDescription className="pt-1 mt-6 ">
                   <div className="text-black text-left hover:text-orange-500">
-                    <Link href="/travel">Home</Link>
+                    <Link href="/">Home</Link>
                   </div>
                   <Accordion type="single" collapsible className="w-full ">
                     <AccordionItem value="item-1">
@@ -50,16 +49,16 @@ const ResponsiveNav = () => {
                         Categories
                       </AccordionTrigger>
                       <AccordionContent className="flex flex-col gap-2  text-left text-black">
-                        <Link href="/travel" className="hover:text-orange-500">
+                        <Link href="#" className="hover:text-orange-500">
                           Travel
                         </Link>
-                        <Link href="/travel" className="hover:text-orange-500">
+                        <Link href="#" className="hover:text-orange-500">
                           Food
                         </Link>
-                        <Link href="/travel" className="hover:text-orange-500">
+                        <Link href="#" className="hover:text-orange-500">
                           Technology
                         </Link>
-                        <Link href="/travel" className="hover:text-orange-500">
+                        <Link href="#" className="hover:text-orange-500">
                           Business
                         </Link>
                         <Accordion type="single" collapsible className="w-full">
@@ -69,19 +68,19 @@ const ResponsiveNav = () => {
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2 text-left  text-black">
                               <Link
-                                href="/travel"
+                                href="#"
                                 className="hover:text-orange-500"
                               >
                                 Sub Menu One
                               </Link>
                               <Link
-                                href="/travel"
+                                href="#"
                                 className="hover:text-orange-500"
                               >
                                 Sub Menu Two
                               </Link>
                               <Link
-                                href="/travel"
+                                href="#"
                                 className="hover:text-orange-500"
                               >
                                 Sub Menu Three
@@ -94,16 +93,16 @@ const ResponsiveNav = () => {
                   </Accordion>
 
                   <div className="flex flex-col gap-2 text-black text-left ">
-                    <Link href="/travel" className="hover:text-orange-500">
+                    <Link href="#" className="hover:text-orange-500">
                       Travel
                     </Link>
-                    <Link href="/travel" className="hover:text-orange-500">
+                    <Link href="#" className="hover:text-orange-500">
                       Food
                     </Link>
-                    <Link href="/travel" className="hover:text-orange-500">
+                    <Link href="#" className="hover:text-orange-500">
                       Technology
                     </Link>
-                    <Link href="/travel" className="hover:text-orange-500">
+                    <Link href="#" className="hover:text-orange-500">
                       Business
                     </Link>
                   </div>

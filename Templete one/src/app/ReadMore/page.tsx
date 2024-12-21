@@ -1,9 +1,85 @@
+
+
+
+
+"use client";
+import React, { useEffect, useState } from "react";
+import { useCart } from "../products/context/CartContext";
+ 
+import { toast, ToastContainer } from "react-toastify";  
+import "react-toastify/dist/ReactToastify.css";  
 import Link from "next/link";
-import React from "react";
+ 
 import { FaShareAlt } from "react-icons/fa";
 import { FaStar, FaRegStarHalfStroke } from "react-icons/fa6";
+ 
 
-const ReadMore = () => {
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
+
+async function fetchProductById(id: string): Promise<Product> {
+  const response = await fetch(`https://localhost:3000/ReadMore/`);
+  if (!response.ok) {
+    throw new Error("Failed to fetch product");
+  }
+  return await response.json();
+}
+
+export default function Carddetails({
+  params: paramsPromise,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const [product, setProduct] = useState<Product | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+  const { addToCart } = useCart();
+
+  const params = React.use(paramsPromise);
+
+  useEffect(() => {
+    async function loadProduct() {
+      try {
+        const data = await fetchProductById(params.id);
+        setProduct(data);
+      } catch (err) {
+        setError("Failed to load product.");
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadProduct();
+  }, [params.id]);
+
+  if (loading)
+    return <div className="flex justify-center items-center h-screen">Loading...</div>;
+  if (error)
+    return <div className="flex justify-center items-center h-screen">{error}</div>;
+
+  const handleAddToCart = () => {
+    addToCart(product!);
+    toast.success("Product added to cart successfully!", {
+      position: "top-center",  
+      autoClose: 3000,  
+      hideProgressBar: false, 
+      closeOnClick: true, 
+      pauseOnHover: true,  
+      draggable: true, 
+      progress: undefined,
+    });
+  };
+
+ 
   return (
     <>
       {/* Header Section */}
@@ -49,7 +125,9 @@ const ReadMore = () => {
           </div>
 
           <div className="flex flex-col-1 ">
-            <button className="px-6 py-3 bg-white hover:text-white text-black font-semibold transition  hover:bg-blue-700 rounded-3xl">
+            <button
+            onClick={handleAddToCart} 
+             className="px-6 py-3 bg-white hover:text-white text-black font-semibold transition  hover:bg-blue-700 rounded-3xl">
               Add To Cart
             </button>
 
@@ -127,6 +205,4 @@ const ReadMore = () => {
       </div>
     </>
   );
-};
-
-export default ReadMore;
+}
